@@ -1,4 +1,4 @@
-import { Box, Button,Typography, useTheme } from "@mui/material";
+import { Box, Button, Typography, useTheme } from "@mui/material";
 import { tokens } from "../../theme";
 import DownloadOutlinedIcon from "@mui/icons-material/DownloadOutlined";
 import PersonAddIcon from "@mui/icons-material/PersonAdd";
@@ -6,8 +6,8 @@ import Header from "../../components/Header";
 import BarChart from "../../components/BarChart";
 import StatBox from "../../components/StatBox";
 import ProgressCircle from "../../components/ProgressCircle";
-import PeopleIcon from '@mui/icons-material/People';
-import TaskIcon from '@mui/icons-material/Task';
+import PeopleIcon from "@mui/icons-material/People";
+import TaskIcon from "@mui/icons-material/Task";
 
 const Dashboard = () => {
   const theme = useTheme();
@@ -111,7 +111,7 @@ const Dashboard = () => {
             }
           />
         </Box>
-      
+
         <Box
           gridColumn="span 6"
           gridRow="span 2"
@@ -127,22 +127,26 @@ const Dashboard = () => {
             alignItems="center"
             mt="25px"
           >
-           <ProgressCircle size="125" />
-           <Typography
-           variant="h5"
-           color={colors.greenAccent[500]}
-           sx={{ mt: "15px" }}
-           >
-         <span style={{ color: colors.greenAccent[500] }}>75% Male Employee</span>
-           </Typography>
-           <Typography
-            variant="h5"
-            color={colors.blueAccent[500]}
-            sx={{ mt: "15px" }}
-             >
-         <span style={{ color: colors.blueAccent[500] }}>25% Female Employee</span>
+            <ProgressCircle size="125" />
+            <Typography
+              variant="h5"
+              color={colors.greenAccent[500]}
+              sx={{ mt: "15px" }}
+            >
+              <span style={{ color: colors.greenAccent[500] }}>
+                75% Male Employee
+              </span>
             </Typography>
-            </Box>
+            <Typography
+              variant="h5"
+              color={colors.blueAccent[500]}
+              sx={{ mt: "15px" }}
+            >
+              <span style={{ color: colors.blueAccent[500] }}>
+                25% Female Employee
+              </span>
+            </Typography>
+          </Box>
         </Box>
         <Box
           gridColumn="span 6"
@@ -160,7 +164,6 @@ const Dashboard = () => {
             <BarChart isDashboard={true} />
           </Box>
         </Box>
-       
       </Box>
     </Box>
   );
